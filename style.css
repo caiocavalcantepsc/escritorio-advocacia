@@ -318,6 +318,10 @@ section:nth-child(even) {
     transform: translateY(-2px);
 }
 
+.logo h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 nav img {
     height: 40px;
     width: 40px;
@@ -557,7 +561,7 @@ nav img {
     color: var(--primary-color) !important;
     padding: 14px 28px !important;
     font-weight: 600;
-    border-radius: var(--radius-round);
+    border-radius: 5px;
     margin-top: 10px;
     text-align: center;
     position: relative;
@@ -574,7 +578,6 @@ nav img {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 /* Menu Toggle Mobile */
@@ -1065,10 +1068,6 @@ nav img {
 .about {
     position: relative;
     padding: 100px 0;
-    /* background: linear-gradient(135deg, 
-        rgba(248, 249, 250, 0.8) 0%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(248, 249, 250, 0.8) 100%); */
     overflow: hidden;
 }
 
@@ -1470,6 +1469,7 @@ nav img {
 /* ========== EQUIPE RESPONSIVA ========== */
 .team {
     background: radial-gradient(rgba(209, 209, 0, 0.158), black);
+    
 }
 
 .team-grid {
