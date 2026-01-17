@@ -650,15 +650,15 @@ nav img {
 
 /* ========== HERO RESPONSIVO ========== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url('https://media.istockphoto.com/id/2215588621/pt/foto/concept-of-justice-law-and-legal-system.webp?a=1&b=1&s=612x612&w=0&k=20&c=XyNpNmSDyVE0wD9-ugseNehRjKx4zdX3C4ysqVsdHUs=');
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(255, 187, 0, 0.055));
+        /* url('https://media.istockphoto.com/id/2215588621/pt/foto/concept-of-justice-law-and-legal-system.webp?a=1&b=1&s=612x612&w=0&k=20&c=XyNpNmSDyVE0wD9-ugseNehRjKx4zdX3C4ysqVsdHUs='); */
     background-size: cover;
     background-position: center;
     color: var(--text-on-dark);
     padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
 @media (min-width: 768px) {
@@ -666,16 +666,18 @@ nav img {
         padding: 140px 0 100px;
         margin-top: 0;
         background-attachment: fixed;
+        height: 100vh;
     }
 
     .hero img {
-        height: 80vh;
+        height: 100vh;
     }
 }
 
 @media (min-width: 992px) {
     .hero {
         padding: 180px 0 120px;
+        height: 100vh;  
     }
 }
 
@@ -871,8 +873,22 @@ nav img {
     position: relative;
 }
 
+.section-header-area {
+    display: grid;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
 @media (min-width: 768px) {
     .section-header {
+        margin-bottom: 80px;
+    }
+
+    .section-header-area {
         margin-bottom: 80px;
     }
 }
@@ -888,14 +904,34 @@ nav img {
     display: inline-block;
 }
 
+.section-header-area h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+    position: relative;
+    display: inline-block;
+}
+
+
 @media (min-width: 768px) {
     .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-header-area h2 {
         font-size: 2.5rem;
     }
 }
 
 @media (min-width: 992px) {
     .section-header h2 {
+        font-size: 3rem;
+    }
+
+    .section-header-area h2 {
         font-size: 3rem;
     }
 }
@@ -912,8 +948,25 @@ nav img {
     border-radius: var(--radius-round);
 }
 
+.section-header-area h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-gold);
+    border-radius: var(--radius-round);
+}
+
 @media (min-width: 768px) {
     .section-header h2::after {
+        width: 80px;
+        bottom: -15px;
+    }
+
+    .section-header-area h2::after {
         width: 80px;
         bottom: -15px;
     }
@@ -927,8 +980,22 @@ nav img {
     line-height: 1.7;
 }
 
+.section-header-area p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 30px auto 0;
+    line-height: 1.7;
+}
+
 @media (min-width: 768px) {
     .section-header p {
+        font-size: 1.2rem;
+        margin: 40px auto 0;
+        line-height: 1.8;
+    }
+
+    .section-header-area p {
         font-size: 1.2rem;
         margin: 40px auto 0;
         line-height: 1.8;
@@ -941,6 +1008,7 @@ nav img {
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 20px 0;
+    margin-bottom: 100px;
 }
 
 @media (min-width: 576px) {
@@ -1477,6 +1545,7 @@ nav img {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 @media (min-width: 576px) {
@@ -1634,6 +1703,8 @@ nav img {
     background-position: center;
     background-attachment: fixed;
 }
+
+
 
 @media (max-width: 768px) {
     .cases {
